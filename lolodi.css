@@ -1,0 +1,103 @@
+
+
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+text-decoration: none;
+outline: none;
+}
+body{
+background: url('gojo.jpg') no-repeat;
+background-position: center;
+background-size: cover;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: Georgia, serif  ;
+}
+.video{
+border: 2px solid rgba(0, 0, 0,.2);;
+width: 700px;
+margin-left: 10px;
+align-items: center;
+}
+.container{
+  background-color: transparent;
+  backdrop-filter: blur(30px);
+  border: 2px solid rgba(0, 0, 0,.2);
+  width: 450px;
+  padding: 40px 20px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  border-radius: 20px;
+  font-family: Georgia, serif  ;
+}
+.container h1{
+margin: 10px 0 ;
+font-family: Georgia, serif  ;
+}
+.input {
+width: 100%;
+}
+/*.input[type="text"], input[type="password"] {
+padding: 50px;
+width: 100%;
+margin: 5px;
+border: 2px solid rgba(0, 0, 0,.2);
+border-radius: 20px;  
+font-size: 20px;
+background-color: transparent;
+color: black;
+margin-left: 30px;
+}*/
+.input[type="text"] {
+  width: 100%;
+  }
+  input[type="password"]{
+  width: 100%;
+}
+input[type="submit"]:active{
+background-color: none;
+cursor: pointer;
+transform: translateY(1px); 
+box-shadow: none;
+} 
+input[type="submit"]{
+    padding: 1rem;
+    width: 80%;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0,.2);
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+    background-color: transparent;
+    color: black;
+    margin-left: 40px;
+    cursor: pointer;
+    font-family: Georgia, serif  ;
+}
+input[type="submit"]:hover{
+color: aqua;
+}
+input[type="text"], input[type="password"]{
+  padding: 1rem;
+  width: 100%;
+  margin: 5px;
+  margin-left: 5px;
+  border: 2px solid rgba(0,0,0,.2);
+  border-radius: 20px;  
+  font-size: 15px;
+  background-color: transparent;
+  font-weight: 600;
+  font-family: Georgia, serif  ;
+  }
+
+
+
+
+

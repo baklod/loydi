@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lolodi.css">
+    <title>log in form</title>
+</head>
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="container">
+    <h1>Login</h1>
+    <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <input type="submit" value="Proceed">
+    </form>
+</div>
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            // Get the input values
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Redirect to another page and pass the input values as URL parameters
+            window.location.href = "view.html?username=" + encodeURIComponent(username) + "&password=" + encodeURIComponent(password);
+        });
+    </script>
+</body>
+</html>
